@@ -12,7 +12,7 @@ const profileSchema = new Schema ({
 	handle: {
 		type: String,
 		required: true,
-		max, 40
+		max: 40
 	},
 	company: {
 		type: String,
@@ -52,13 +52,13 @@ const profileSchema = new Schema ({
 	 	},
 	 	from : {
 	 		type: Date,
-	 		required; true
+	 		required: true
 	 	},
 	 	to: {
 	 		type: Date,
 	 	},
 	 	current: {
-	 		type: Booleand,
+	 		type: Boolean,
 	 		default: false
 		},
 		description: {
@@ -82,13 +82,13 @@ const profileSchema = new Schema ({
 	 	},
 	 	from : {
 	 		type: Date,
-	 		required; true
+	 		required: true
 	 	},
 	 	to: {
 	 		type: Date,
 	 	},
 	 	current: {
-	 		type: Booleand,
+	 		type: Boolean,
 	 		default: false
 		},
 		description: {
@@ -108,15 +108,15 @@ const profileSchema = new Schema ({
 		},
 		linkedin: {
 			type: String
-		}
+		},
 		instagram: {
 			type: String
-		}
-	},
+		},
 	date: {
 		type: Date,
 		default: Date.now
 	}
+}
 
 });
 
